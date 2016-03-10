@@ -1,0 +1,23 @@
+{
+  "name": "metal-soy-incremental-dom-bundle",
+  "version": "0.0.1",
+  "description": "A bundle containing all the closure dependencies required by soy files compiled to incremental-dom",
+  "license": "MIT",
+  "repository": "metal/metal-soy-incremental-dom-bundle",
+  "author": {
+    "name": "Maira Bello",
+    "email": "maira.araujo@liferay.com"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "jshint test/test.js index.js"
+  },
+  "devDependencies": {
+    "jshint": "^2.7.0"
+  }
+}
