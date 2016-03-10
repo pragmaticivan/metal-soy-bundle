@@ -12,12 +12,24 @@
     "node": ">=0.12.0"
   },
   "files": [
-    "index.js"
+    "build"
   ],
   "scripts": {
-    "lint": "jshint test/test.js index.js"
+    "lint": "jshint gulpfile.js",
+    "prepublish": "gulp"
   },
   "devDependencies": {
-    "jshint": "^2.7.0"
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.7.1",
+    "gulp-minify": "0.0.5",
+    "jshint": "^2.7.0",
+    "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "closure-templates": "^20151008.0.0",
+    "closure-templates-incrementaldom": "0.0.1",
+    "google-closure-library": "^20160218.0.2",
+    "incremental-dom": "^0.3.0"
   }
 }
