@@ -54,7 +54,7 @@ var src = [
   'node_modules/google-closure-library/closure/goog/debug/debug.js',
   'node_modules/google-closure-library/closure/goog/i18n/bidiformatter.js',
   'node_modules/closure-templates/soyutils_usegoog.js',
-  'node_modules/incremental-dom/dist/incremental-dom.js'
+  'vendor/incremental-dom.js'
 ];
 
 gulp.task('build', function() {
