@@ -1,6 +1,7 @@
 'use strict';
 
 var concat = require('gulp-concat');
+var footer = require('gulp-footer');
 var gulp = require('gulp');
 var header = require('gulp-header');
 var runSequence = require('run-sequence');
@@ -60,6 +61,11 @@ gulp.task('build', function() {
   return gulp.src(src)
     .pipe(concat('bundle.js'))
     .pipe(header('this.CLOSURE_NO_DEPS = true;\n\n'))
+    .pipe(footer('\n\ngoog.loadModule(function() {\n' +
+      '  goog.module(\'incrementaldom\');\n' +
+      '  return IncrementalDOM;\n' +
+      '});'
+    ))
     .pipe(gulp.dest('build'));
 });
 
