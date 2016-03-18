@@ -19,9 +19,7 @@
  */
 
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-  typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (factory((global.IncrementalDOM = global.IncrementalDOM || {})));
+  factory((global.IncrementalDOM = global.IncrementalDOM || {}));
 }(this, function (exports) { 'use strict';
 
   /**
