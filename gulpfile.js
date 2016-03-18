@@ -60,7 +60,7 @@ var src = [
 gulp.task('build', function() {
   return gulp.src(src)
     .pipe(concat('bundle.js'))
-    .pipe(header('this.CLOSURE_NO_DEPS = true;\n\n'))
+    .pipe(header('this.CLOSURE_NO_DEPS = true;\nthis.goog = this.goog || {};\n\n'))
     .pipe(footer('\n\ngoog.loadModule(function() {\n' +
       '  goog.module(\'incrementaldom\');\n' +
       '  return IncrementalDOM;\n' +
