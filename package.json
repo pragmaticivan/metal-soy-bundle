@@ -1,6 +1,6 @@
 {
   "name": "metal-soy-incremental-dom-bundle",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "A bundle containing all the closure dependencies required by soy files compiled to incremental-dom",
   "license": "MIT",
   "repository": "metal/metal-soy-incremental-dom-bundle",
