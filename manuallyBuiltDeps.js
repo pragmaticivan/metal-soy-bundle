@@ -4679,6 +4679,6 @@ goog.inherits(goog.soy.data.UnsanitizedText, goog.soy.data.SanitizedContent);
     goog.module('soydata');
     return soydata;
   });
-})()
+})();
 
 /* jshint ignore:end */
