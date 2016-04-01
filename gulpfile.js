@@ -67,6 +67,7 @@ gulp.task('build', function() {
   return gulp.src(src)
     .pipe(concat('bundle.js'))
     .pipe(replace('var goog = goog || {};', 'var goog = this.goog || {};'))
+    .pipe(replace('//# sourceMappingURL=incremental-dom.js.map', ''))
     .pipe(header('(function() {\nthis.CLOSURE_NO_DEPS = true;\nthis.goog = this.goog || {};\n\n'))
     .pipe(footer('\n\ngoog.loadModule(function() {\n' +
       '  goog.module(\'incrementaldom\');\n' +
