@@ -26,9 +26,10 @@
     "gulp-concat": "^2.6.0",
     "gulp-footer": "^1.0.5",
     "gulp-header": "^1.7.1",
-    "gulp-minify": "0.0.5",
     "gulp-replace": "^0.5.4",
-    "jshint": "^2.7.0",
-    "run-sequence": "^1.1.5"
+    "jshint": "^2.7.0"
+  },
+  "dependencies": {
+    "metal-incremental-dom": "^1.0.0-rc.2"
   }
 }
