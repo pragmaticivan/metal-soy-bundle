@@ -20,6 +20,8 @@
     "prepublish": "gulp"
   },
   "devDependencies": {
+    "closure-templates": "^20151008.0.0",
+    "google-closure-library": "^20160218.0.2",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-footer": "^1.0.5",
@@ -28,11 +30,5 @@
     "gulp-replace": "^0.5.4",
     "jshint": "^2.7.0",
     "run-sequence": "^1.1.5"
-  },
-  "dependencies": {
-    "closure-templates": "^20151008.0.0",
-    "closure-templates-incrementaldom": "0.0.1",
-    "google-closure-library": "^20160218.0.2",
-    "incremental-dom": "^0.3.0"
   }
 }
