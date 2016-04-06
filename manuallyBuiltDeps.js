@@ -4679,6 +4679,11 @@ goog.inherits(goog.soy.data.UnsanitizedText, goog.soy.data.SanitizedContent);
     goog.module('soydata');
     return soydata;
   });
+
+  goog.loadModule(function() {
+    goog.module('soy.asserts');
+    return soy;
+  });
 })();
 
 /* jshint ignore:end */
