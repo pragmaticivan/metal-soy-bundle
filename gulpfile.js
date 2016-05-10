@@ -10,6 +10,7 @@ gulp.task('build', function() {
   return gulp.src('manuallyBuiltDeps.js')
     .pipe(concat('bundle.js'))
     .pipe(replace('var goog = goog || {};', 'var goog = this.goog || {};'))
+    .pipe(replace('@define {', '@type {'))
     .pipe(header('import \'metal-incremental-dom\';\n\n(function() {\nthis.CLOSURE_NO_DEPS = true;\nthis.goog = this.goog || {};\n\n'))
     .pipe(footer('\n\ngoog.loadModule(function() {\n' +
       '  goog.module(\'incrementaldom\');\n' +
