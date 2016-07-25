@@ -36,6 +36,6 @@
     "jshint": "^2.7.0"
   },
   "dependencies": {
-    "metal-incremental-dom": "^1.0.0-rc.2"
+    "metal-incremental-dom": "^2.0.0"
   }
 }
