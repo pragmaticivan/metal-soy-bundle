@@ -2337,7 +2337,7 @@ if (!COMPILED) {
   goog.global['COMPILED'] = COMPILED;
 }
 
-goog.string = {};
+goog.provide('goog.string');
 
 
 /**
